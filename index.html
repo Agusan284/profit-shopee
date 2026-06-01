@@ -645,7 +645,6 @@
     const selectedDate =
         document.getElementById('reportDate').value;
 
-       alert(selectedDate);
 
     if (!selectedDate) {
         alert("Pilih tanggal terlebih dahulu.");
@@ -669,9 +668,6 @@
     .then(response => response.json())
 
     .then(res => {
-
-        console.log(res);
-        alert(JSON.stringify(res));
         
         const tbody =
             document.querySelector('#mainTable tbody');
